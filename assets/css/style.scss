@@ -618,6 +618,16 @@ nav .navbar .links li .arrow {
   }
 }
 /* Responsive */
+/* Màn to */
+@media screen and (min-width: 1600px) {
+  header {
+    height: 100vh;
+    padding-top: 6rem;
+  }
+  #hero_section .left-content { 
+    gap: 4rem;
+  }
+}
 /*Ipad ngang(1024 x 768)*/
 @media screen and (max-width: 1024px) {
   #hero_section .left-content .utilities {
