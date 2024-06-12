@@ -40,28 +40,6 @@
               </li>
               <li>
                 <a href="#">Hướng dẫn sử dụng</a>
-                <!-- Submenu -->
-                <!-- <i
-                  class="fa fa-angle-down fa-lg htmlcss-arrow arrow"
-                  aria-hidden="true"
-                ></i>
-
-                <ul class="htmlCss-sub-menu sub-menu">
-                  <li><a href="#">Web Design</a></li>
-                  <li><a href="#">Login Forms</a></li>
-                  <li><a href="#">Card Design</a></li>
-                  <li class="more">
-                    <span
-                      ><a href="#">More</a>
-                      <i class="bx bxs-chevron-right arrow more-arrow"></i>
-                    </span>
-                    <ul class="more-sub-menu sub-menu">
-                      <li><a href="#">Neumorphism</a></li>
-                      <li><a href="#">Pre-loader</a></li>
-                      <li><a href="#">Glassmorphism</a></li>
-                    </ul>
-                  </li>
-                </ul> -->
               </li>
               <li>
                 <a href="#">Báo giá</a>
@@ -420,29 +398,23 @@
           const $icon = $item.find("i");
           const $faqBox = $item.closest(".faq-box");
           $(".faq-box").removeClass("faqBoxActive");
-          $faqBox.addClass("faqBoxActive");
-
           $faqItems.not($item).each(function () {
             const $otherAnswer = $(this).next();
             const $otherIcon = $(this).find("i");
-
             $otherAnswer
               .removeClass("active")
               .css("max-height", "0")
               .css("margin-top", 0);
-
             $otherIcon.removeClass("active");
+            
           });
 
           $answer.toggleClass("active");
           $icon.toggleClass("active");
-          $answer
-            .css(
-              "max-height",
-              $answer.hasClass("active") ? $answer[0].scrollHeight + "px" : "0"
-            )
-            .css("margin-top", $answer.hasClass("active") ? "1rem" : "0");
+          $answer.css("max-height",$answer.hasClass("active") ? $answer[0].scrollHeight + "px" : "0").css("margin-top", $answer.hasClass("active") ? "1rem" : "0");
+          $faqBox.addClass( $answer.hasClass("active") ? "faqBoxActive" : "");
         });
+
       });
     </script>
     <script src="./assets/js/main.js"></script>
