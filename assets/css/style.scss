@@ -399,11 +399,10 @@ nav .navbar .links li:hover .js-sub-menu {
   font-weight: 700;
   line-height: 22px;
   width: 20rem;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
   padding: 1rem 0;
   margin-bottom: 2rem;
+  text-align: center;
   span {
     color: #000;
   }
@@ -432,7 +431,7 @@ nav .navbar .links li:hover .js-sub-menu {
   margin-bottom: 4rem;
 }
 #about_easydocs {
-  padding: $section_distance;
+  padding: $section_distance 0;
   img {
     max-width: 100%;
   }
@@ -446,13 +445,13 @@ nav .navbar .links li:hover .js-sub-menu {
       gap: 12px;
       .featured-detail {
         .featured-name {
-          color: var(--Orange-Main-Orange, #F60);
+          color: var(--Orange-Main-Orange, #f60);
           font-size: 2rem;
           font-style: normal;
           font-weight: 800;
         }
-        .featured-des{
-          color: var(--Basic-Black, #2A2B2A);
+        .featured-des {
+          color: var(--Basic-Black, #2a2b2a);
           font-family: SVN-Gilroy-regular;
           font-size: 1.6rem;
           font-style: normal;
@@ -460,6 +459,145 @@ nav .navbar .links li:hover .js-sub-menu {
         }
       }
     }
+  }
+}
+#why_easydocs {
+  img {
+    max-width: 100%;
+  }
+  padding: $section_distance 0;
+  .why-box {
+    display: flex;
+    padding: 4rem 2.4rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    border-radius: 2.4rem;
+    border: 1px solid var(--Orange-Main-Orange, #f60);
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    .esd-reason {
+      color: #000;
+      text-align: center;
+      font-family: SVN-Gilroy-regular;
+      font-size: 1.6rem;
+      font-style: normal;
+      line-height: 120%; /* 19.2px */
+    }
+  }
 
+  .trial-now-banner {
+    margin-top: 100px;
+  }
+}
+#benefit_easydocs {
+  padding: $section_distance 0;
+  background-image: url(../img/benefit-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  img {
+    max-width: 100%;
+  }
+  .esd-pin {
+    margin: 0 0 2rem 0;
+  }
+  .benefit {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .benefit-row {
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+  }
+  .benefit-detail {
+    .benefit-name {
+      color: var(--Orange-Main-Orange, #f60);
+      font-size: 2rem;
+      font-style: normal;
+      line-height: 2.9rem; /* 145% */
+    }
+    .benefit-des {
+      color: var(--Basic-Black, #2a2b2a);
+      font-family: SVN-Gilroy-regular;
+      font-size: 1.6rem;
+    }
+  }
+}
+#partner_easydocs {
+  padding: $section_distance 0;
+  img {
+    max-width: 100%;
+  }
+  .list-partner {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+}
+#question_easydocs {
+  padding: $section_distance 0;
+  .faq-item:last-child {
+    border-bottom: none;
+  }
+
+  .faq-question {
+    color: var(--Basic-Black, #2a2b2a);
+    font-size: 2rem;
+    span {
+      color: var(--Orange-Main-Orange, #f60);
+    }
+  }
+  .faq-answer {
+    color: var(--Basic-Black, #2a2b2a);
+    font-family: SVN-Gilroy-regular !important;
+    font-size: 1.6rem;
+    font-style: normal;
+    line-height: 120%; /* 19.2px */
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+  }
+
+  .icon-container i {
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .icon-container i.active {
+    transform: rotate(90deg);
+  }
+
+  .faq-box {
+    display: flex;
+    padding: 1rem 3rem;
+    flex-direction: column;
+    align-self: stretch;
+    background: #fff;
+    margin-bottom: 2rem;
+    border-radius: 2.4rem;
+    border: 1px solid var(--Orange-Main-Orange, #f60);
+    -webkit-border-radius: 2.4rem;
+    -moz-border-radius: 2.4rem;
+    -ms-border-radius: 2.4rem;
+    -o-border-radius: 2.4rem;
+    &:hover {
+      background: #FFFAF3;
+    }
+  }
+  .faqBoxActive {
+    background: #FFFAF3;
+
+  }
+  .faq-item {
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 }

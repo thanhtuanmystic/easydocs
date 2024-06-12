@@ -415,11 +415,10 @@ nav .navbar .links li:hover .js-sub-menu {
   font-weight: 700;
   line-height: 22px;
   width: 20rem;
-  display: flex;
-  justify-content: center;
   margin: 0 auto;
   padding: 1rem 0;
   margin-bottom: 2rem;
+  text-align: center;
 }
 .esd-pin span {
   color: #000;
@@ -451,7 +450,7 @@ nav .navbar .links li:hover .js-sub-menu {
 }
 
 #about_easydocs {
-  padding: 5rem;
+  padding: 5rem 0;
 }
 #about_easydocs img {
   max-width: 100%;
@@ -467,17 +466,153 @@ nav .navbar .links li:hover .js-sub-menu {
   gap: 12px;
 }
 #about_easydocs .featured-row .featured-detail .featured-name {
-  color: var(--Orange-Main-Orange, #F60);
+  color: var(--Orange-Main-Orange, #f60);
   font-size: 2rem;
   font-style: normal;
   font-weight: 800;
 }
 #about_easydocs .featured-row .featured-detail .featured-des {
-  color: var(--Basic-Black, #2A2B2A);
+  color: var(--Basic-Black, #2a2b2a);
   font-family: SVN-Gilroy-regular;
   font-size: 1.6rem;
   font-style: normal;
   font-weight: 400;
+}
+
+#why_easydocs {
+  padding: 5rem 0;
+}
+#why_easydocs img {
+  max-width: 100%;
+}
+#why_easydocs .why-box {
+  display: flex;
+  padding: 4rem 2.4rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--Orange-Main-Orange, #f60);
+  -webkit-border-radius: 2.4rem;
+  -moz-border-radius: 2.4rem;
+  -ms-border-radius: 2.4rem;
+  -o-border-radius: 2.4rem;
+}
+#why_easydocs .why-box .esd-reason {
+  color: #000;
+  text-align: center;
+  font-family: SVN-Gilroy-regular;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 120%; /* 19.2px */
+}
+#why_easydocs .trial-now-banner {
+  margin-top: 100px;
+}
+
+#benefit_easydocs {
+  padding: 5rem 0;
+  background-image: url(../img/benefit-banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#benefit_easydocs img {
+  max-width: 100%;
+}
+#benefit_easydocs .esd-pin {
+  margin: 0 0 2rem 0;
+}
+#benefit_easydocs .benefit {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#benefit_easydocs .benefit-row {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+#benefit_easydocs .benefit-detail .benefit-name {
+  color: var(--Orange-Main-Orange, #f60);
+  font-size: 2rem;
+  font-style: normal;
+  line-height: 2.9rem; /* 145% */
+}
+#benefit_easydocs .benefit-detail .benefit-des {
+  color: var(--Basic-Black, #2a2b2a);
+  font-family: SVN-Gilroy-regular;
+  font-size: 1.6rem;
+}
+
+#partner_easydocs {
+  padding: 5rem 0;
+}
+#partner_easydocs img {
+  max-width: 100%;
+}
+#partner_easydocs .list-partner {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+#question_easydocs {
+  padding: 5rem 0;
+}
+#question_easydocs .faq-item:last-child {
+  border-bottom: none;
+}
+#question_easydocs .faq-question {
+  color: var(--Basic-Black, #2a2b2a);
+  font-size: 2rem;
+}
+#question_easydocs .faq-question span {
+  color: var(--Orange-Main-Orange, #f60);
+}
+#question_easydocs .faq-answer {
+  color: var(--Basic-Black, #2a2b2a);
+  font-family: SVN-Gilroy-regular !important;
+  font-size: 1.6rem;
+  font-style: normal;
+  line-height: 120%; /* 19.2px */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-in-out;
+}
+#question_easydocs .icon-container i {
+  font-size: 1.6rem;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+#question_easydocs .icon-container i.active {
+  transform: rotate(90deg);
+}
+#question_easydocs .faq-box {
+  display: flex;
+  padding: 1rem 3rem;
+  flex-direction: column;
+  align-self: stretch;
+  background: #fff;
+  margin-bottom: 2rem;
+  border-radius: 2.4rem;
+  border: 1px solid var(--Orange-Main-Orange, #f60);
+  -webkit-border-radius: 2.4rem;
+  -moz-border-radius: 2.4rem;
+  -ms-border-radius: 2.4rem;
+  -o-border-radius: 2.4rem;
+}
+#question_easydocs .faq-box:hover {
+  background: #FFFAF3;
+}
+#question_easydocs .faqBoxActive {
+  background: #FFFAF3;
+}
+#question_easydocs .faq-item {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */
