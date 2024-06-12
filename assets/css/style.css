@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Googlefont Poppins CDN Link */
 @font-face {
   font-family: SVN-Gilroy-bold;
@@ -42,7 +43,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  padding-bottom: 5rem;
 }
 
 nav {
@@ -208,7 +209,7 @@ nav .navbar .links li .arrow {
     display: block;
     max-width: 27rem;
     width: 100%;
-    background: #3e8da8;
+    background: #fffaf3;
     line-height: 4rem;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     transition: all 0.5s ease;
@@ -408,11 +409,10 @@ nav .navbar .links li .arrow {
   line-height: 120%; /* 19.2px */
 }
 #why_easydocs .trial-now-banner {
-  margin-top: 100px;
+  margin-top: 10rem;
 }
 
 #benefit_easydocs {
-  padding: 5rem 0;
   background-image: url(../img/benefit-banner.png);
   background-repeat: no-repeat;
   background-size: cover;
@@ -450,6 +450,9 @@ nav .navbar .links li .arrow {
 }
 #partner_easydocs img {
   max-width: 100%;
+}
+#partner_easydocs .scroller[data-animated=true] {
+  overflow: hidden;
 }
 #partner_easydocs .scroller__inner {
   padding-block: 1rem;
@@ -610,6 +613,105 @@ nav .navbar .links li .arrow {
   display: flex;
   gap: 2.4rem;
   margin-top: 4rem;
+}
+
+/* Responsive */
+/*Ipad ngang(1024 x 768)*/
+@media screen and (max-width: 1024px) {
+  #hero_section .left-content .utilities {
+    font-size: 1.4rem;
+  }
+  #hero_section .left-content .slogan {
+    font-size: 3rem;
+  }
+  .esd-title {
+    font-size: 2.6rem;
+    margin-bottom: 2rem;
+  }
+  .esd-sub-title {
+    margin-bottom: 2rem;
+  }
+  #about_easydocs .featured-row .featured-detail .featured-name {
+    font-size: 1.6rem;
+  }
+  #about_easydocs .featured-row .featured-detail .featured-des {
+    font-size: 1.4rem;
+  }
+  #benefit_easydocs .benefit-detail .benefit-name {
+    font-size: 1.6rem;
+  }
+  #benefit_easydocs .benefit-detail .benefit-des {
+    font-size: 1.4rem;
+  }
+}
+/*Ipad dọc(768 x 1024)*/
+@media screen and (max-width: 768px) {
+  header {
+    background: #fffaf3;
+    padding: 3rem 0;
+  }
+  #about_easydocs,
+  #benefit_easydocs,
+  #footer_easydocs,
+  #hero_section,
+  #news_easydocs,
+  #partner_easydocs,
+  #question_easydocs,
+  #why_easydocs {
+    padding: 2rem 0;
+  }
+  #benefit_easydocs {
+    background: #fffaf3;
+  }
+  #question_easydocs .faq-question {
+    font-size: 1.6rem;
+  }
+  #question_easydocs .faq-answer {
+    font-size: 1.4rem;
+  }
+  #news_easydocs .news-box .news-title {
+    font-size: 1.6rem;
+  }
+  #news_easydocs .news-box .news-des {
+    font-size: 1.4rem;
+  }
+}
+/*Tablet nhỏ(480 x 640)*/
+@media screen and (max-width: 480px) {
+  header {
+    padding: 1rem 0;
+  }
+  #hero_section .left-content .utilities {
+    font-size: 1rem;
+  }
+  #hero_section .left-content .btn-part {
+    gap: 1rem;
+  }
+  .esd-title {
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+  }
+  .esd-sub-title {
+    font-size: 1.2rem;
+  }
+  #hero_section .left-content {
+    gap: 1rem;
+  }
+  #hero_section .left-content .slogan {
+    font-size: 2rem;
+  }
+  #hero_section .left-content .slogan .sub-slogan {
+    font-size: 1.4rem;
+  }
+  #hero_section .left-content .des-slogan {
+    font-size: 1.4rem;
+  }
+  #why_easydocs .why-box {
+    padding: 2rem 1rem;
+  }
+  #why_easydocs .trial-now-banner {
+    margin-top: 2rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
