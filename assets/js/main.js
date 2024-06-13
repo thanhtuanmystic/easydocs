@@ -48,7 +48,7 @@ $(document).ready(function () {
 // Scroll Partner
 const scrollers = document.querySelectorAll(".scroller");
 
-// If a user hasn't opted in for recuded motion, then we add the animation
+// If an user hasn't opted in for recuded motion, then we add the animation
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
   addAnimation();
 }
@@ -70,5 +70,32 @@ function addAnimation() {
       duplicatedItem.setAttribute("aria-hidden", true);
       scrollerInner.appendChild(duplicatedItem);
     });
+  });
+}
+
+
+// Các element từ từ hiện lên khi load trang
+function scrollMouse(classFirst, nameClassAdd) {
+  $(classFirst).addClass("hidden");
+  $(classFirst).each(function () {
+    var spaceTop = $(this).offset().top;
+    var chieucao = $(this).height();
+    var spaceBottom = $(document).height() - $(this).offset().top - chieucao;
+    var scrollBottom =
+      $(document).height() + $(window).height() - $(window).scrollTop();
+    var scrollSpaceTop = $(window).scrollTop();
+    if (
+      spaceBottom < scrollBottom - $(window).height() &&
+      spaceTop < scrollSpaceTop + $(window).height()
+    ) {
+      $(this).addClass(nameClassAdd);
+    }
+  });
+}
+var width = $(window).width();
+
+if (width > 767) {
+  $(window).scroll(function () {
+    scrollMouse(".animation_slide_bottom_to_show", "slide-bottom-to-show");
   });
 }
